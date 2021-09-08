@@ -10,6 +10,7 @@ import goodtimes from "../img/goodtimes-small.png";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from "../animation";
+import { useScroll } from "../components/useScroll";
 
 const OurWork = () => {
   return (
@@ -18,7 +19,7 @@ const OurWork = () => {
       initial="hidden"
       animate="show"
       exit="exit"
-      style={{ background: "#ffffff" }}
+      style={{ background: "#1B1B1B", color: "#ffffff" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -92,20 +93,20 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: #27e8a1;
   z-index: 2;
 `;
 
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #11faa5;
 `;
 
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #18c485;
 `;
 
 const Frame4 = styled(Frame1)`
-  background: #8effa0;
+  background: #0f7a53;
 `;
 
 export default OurWork;
