@@ -50,7 +50,7 @@ const ContactStyle = styled(motion.div)`
 
   @media (max-width: 1500px) {
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 30px;
   }
 `;
 
@@ -69,6 +69,7 @@ const Hide = styled.div`
 
 const Circle = styled.div`
   border-radius: 50%;
+  min-width: 3rem;
   width: 3rem;
   height: 3rem;
   background: #23d997;

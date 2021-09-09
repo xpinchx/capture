@@ -10,7 +10,7 @@ import { pageAnimation } from "../animation";
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
+  const [movies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
   // UseEffect
@@ -58,7 +58,10 @@ const HeadLine = styled.div`
   }
 
   img {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     height: 70vh;
     object-fit: cover;
   }
@@ -71,7 +74,7 @@ const Awards = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     display: block;
     margin: 2rem 2rem;
   }
