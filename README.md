@@ -1,2 +1,2 @@
 # capture
- A responsibe website using React
+ A responsive portfolio website using React
